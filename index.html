@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Before the Session — What to Bring</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+
+:root {
+  --teal: #0a8080;
+  --teal-light: #e6ffff;
+  --teal-mid: #c0eeee;
+  --pink: #ea37a3;
+  --pink-light: #fdf1f5;
+  --purple: #6c35c9;
+  --purple-light: #f3eeff;
+  --gold: #c87900;
+  --gold-light: #fff8e6;
+  --dark: #1a1a2e;
+  --grid: #e0f0f0;
+  --bg: #f7fefe;
+  --shadow-sm: 0 2px 8px rgba(10,128,128,0.08);
+  --shadow-md: 0 4px 20px rgba(10,128,128,0.12);
+  --shadow-lg: 0 8px 32px rgba(10,128,128,0.16);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-attachment: fixed;
+  color: var(--dark);
+  padding: 20px 16px 60px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.97);
+  border: 2px solid var(--teal-mid);
+  border-radius: 16px;
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+
+/* ── HEADER ── */
+.site-header {
+  background: linear-gradient(135deg, var(--teal) 0%, #0d6060 60%, #1a4a7a 100%);
+  padding: 2.5rem 2.5rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.site-header::before {
+  content: '';
+  position: absolute;
+  top: -40px; right: -40px;
+  width: 200px; height: 200px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.06);
+}
+
+.site-header::after {
+  content: '';
+  position: absolute;
+  bottom: -30px; left: 30%;
+  width: 300px; height: 120px;
+  border-radius: 50%;
+  background: rgba(234,55,163,0.12);
+}
+
+.header-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 0.5rem;
+}
+
+.site-header h1 {
+  font-family: 'Space Mono', monospace;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: white;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.header-sub {
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.75);
+  position: relative;
+  z-index: 1;
+}
+
+.timing-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 1.2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.t-pill {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 1.5px solid rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.12);
+  color: white;
+}
+
+/* ── BODY ── */
+.page { padding: 2rem 2.5rem 2.5rem; }
+
+/* ── SECTION HEADINGS ── */
+h2 {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--teal);
+  margin: 2rem 0 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+h2::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 16px;
+  background: var(--pink);
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+p { font-size: 0.92rem; line-height: 1.75; margin-bottom: 0.8em; }
+
+/* ── BANNER ── */
+.s-banner {
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  font-size: 0.88rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid var(--teal);
+  background: var(--teal-light);
+  color: var(--teal);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ── ITEMS ── */
+.item {
+  background: white;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  box-shadow: var(--shadow-sm);
+  border: 1.5px solid var(--teal-mid);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  transition: box-shadow 0.2s;
+}
+
+.item:hover { box-shadow: var(--shadow-md); }
+
+.item-num {
+  background: var(--teal);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Space Mono', monospace;
+  font-size: 2rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.item:nth-child(2) .item-num { background: var(--pink); }
+.item:nth-child(3) .item-num { background: var(--purple); }
+
+.item-body { padding: 16px 18px; }
+
+.item-title {
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: var(--teal);
+  margin-bottom: 6px;
+}
+
+.item:nth-child(2) .item-title { color: var(--pink); }
+.item:nth-child(3) .item-title { color: var(--purple); }
+
+.item-desc {
+  font-size: 0.85rem;
+  color: #444;
+  line-height: 1.7;
+}
+
+.item-eg {
+  font-size: 0.78rem;
+  color: #888;
+  font-style: italic;
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px dashed var(--teal-mid);
+}
+
+/* ── SCAN NOTE ── */
+.info-box {
+  background: var(--teal-light);
+  border-left: 4px solid var(--teal);
+  padding: 12px 14px;
+  border-radius: 0 8px 8px 0;
+  margin: 1rem 0;
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: var(--dark);
+}
+
+.info-box strong { color: var(--teal); }
+
+/* ── SCAN STEPS ── */
+.scan-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+  margin: 1rem 0;
+}
+
+.scan-card {
+  background: white;
+  border: 1.5px solid var(--teal-mid);
+  border-top: 4px solid var(--teal);
+  border-radius: 10px;
+  padding: 14px 12px;
+}
+
+.scan-num {
+  font-family: 'Space Mono', monospace;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--teal);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.scan-title {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.scan-body {
+  font-size: 0.75rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ── CHECKLIST ── */
+.checklist {
+  background: white;
+  border: 2px solid var(--gold);
+  border-radius: 12px;
+  padding: 16px;
+  margin: 1.5rem 0 0;
+  box-shadow: var(--shadow-sm);
+}
+
+.checklist h3 {
+  font-family: 'Space Mono', monospace;
+  text-align: center;
+  margin: 0 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px dashed var(--gold);
+  font-size: 0.82rem;
+  color: var(--gold);
+}
+
+.ci {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 9px;
+}
+
+.ci:last-child { margin-bottom: 0; }
+
+.chk {
+  width: 22px;
+  height: 22px;
+  border: 2px solid var(--gold);
+  border-radius: 5px;
+  flex-shrink: 0;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s;
+  margin-top: 1px;
+}
+
+.chk.checked { background: var(--gold); }
+
+.chk.checked::after {
+  content: "✓";
+  position: absolute;
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  top: 0px;
+  left: 3px;
+}
+
+.cl { font-size: 0.88rem; color: var(--dark); padding-top: 1px; }
+
+/* ── FOOTER ── */
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--teal-mid);
+  font-family: 'Space Mono', monospace;
+  font-size: 0.68rem;
+  color: #aaa;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 600px) {
+  .page { padding: 1.5rem 1.2rem; }
+  .site-header { padding: 1.8rem 1.5rem 1.5rem; }
+  .site-header h1 { font-size: 1.3rem; }
+  .item { grid-template-columns: 56px 1fr; }
+  .item-num { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <header class="site-header">
+    <div class="header-label">IELS Level 5 · Photoshop Rotation · Pre-Session</div>
+    <h1>✦ What to Bring</h1>
+    <div class="header-sub">Prepare before you arrive — three things, same for everyone</div>
+    <div class="timing-row">
+      <span class="t-pill">📷 Media</span>
+      <span class="t-pill">📊 Business</span>
+      <span class="t-pill">✏️ Design</span>
+      <span class="t-pill">⏱ 20 min prep</span>
+    </div>
+  </header>
+
+  <div class="page">
+
+    <div class="s-banner">📌 This applies to everyone — Media, Business, and Design</div>
+
+    <p>Bring work connected to your own subject area. If it is physical, scan or photograph it flat before you arrive. Save files to <strong>USB, Google Drive, or OneDrive</strong> — not email.</p>
+
+    <h2>The Three Things</h2>
+
+    <div class="item">
+      <div class="item-num">1</div>
+      <div class="item-body">
+        <div class="item-title">Scanned Work from Class or Homework</div>
+        <div class="item-desc">Bring something you have already made — from class, a homework task, or your own practice. It can be a sketch, a finished piece, a layout, a photograph, or a page of notes. Physical work must be scanned or photographed flat. Bring at least two or three files so you have options.</div>
+        <div class="item-eg">e.g. a sketchbook page, a printed layout, a photograph you took, a mood board, a collage, a piece of hand-drawn type</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-num">2</div>
+      <div class="item-body">
+        <div class="item-title">A Handwritten Quote or Statement</div>
+        <div class="item-desc">Choose a quote, artist statement, or short piece of writing by <strong>someone you are researching</strong> — not your own words. Write it out by hand on plain paper, then scan or photograph it. It does not need to be neat. The handwriting becomes raw material for the glitch text exercise in the session.</div>
+        <div class="item-eg">e.g. a quote from an artist you are studying, a line from a designer's manifesto, a sentence from a photographer's statement, a famous phrase connected to your subject</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-num">3</div>
+      <div class="item-body">
+        <div class="item-title">Images to Expand Your Research</div>
+        <div class="item-desc">Bring <strong>2–3 images of the person or work you are researching</strong> — the artist, designer, or thinker whose quote you chose. These will be used to develop your research pages in the session. Save as JPEG files, clearly named.</div>
+        <div class="item-eg">e.g. a portrait of the artist, photographs of their work, images from an exhibition, a scanned page from a book about them</div>
+      </div>
+    </div>
+
+    <h2>If Your Work is Physical — How to Scan</h2>
+
+    <div class="scan-grid">
+      <div class="scan-card">
+        <div class="scan-num">1</div>
+        <div class="scan-title">Use the library scanner</div>
+        <div class="scan-body">Scan at 300dpi minimum. 600dpi if the work has fine detail. Save as JPEG or TIFF.</div>
+      </div>
+      <div class="scan-card">
+        <div class="scan-num">2</div>
+        <div class="scan-title">Or photograph flat</div>
+        <div class="scan-body">Lay the work on a table. Photograph directly above in good daylight. Avoid shadows. Your phone camera is fine.</div>
+      </div>
+      <div class="scan-card">
+        <div class="scan-num">3</div>
+        <div class="scan-title">Save somewhere accessible</div>
+        <div class="scan-body">Google Drive, OneDrive, or a USB stick. Not just on your phone — you need to open files in Photoshop.</div>
+      </div>
+      <div class="scan-card">
+        <div class="scan-num">4</div>
+        <div class="scan-title">Bring at least 3</div>
+        <div class="scan-body">More is better. Having options means you are never stuck at the start of the session.</div>
+      </div>
+    </div>
+
+    <div class="info-box">
+      <strong>Tip:</strong> Name your files clearly — <em>myname-sketchbook.jpg</em>, <em>myname-quote.jpg</em>, <em>myname-artist-ref1.jpg</em> — so you can find them quickly when the session starts.
+    </div>
+
+    <h2>Before You Arrive</h2>
+
+    <div class="checklist">
+      <h3>✓ Tick off before the session</h3>
+      <div class="ci"><div class="chk" onclick="tog(this)"></div><span class="cl">Scanned or photographed my class / homework work</span></div>
+      <div class="ci"><div class="chk" onclick="tog(this)"></div><span class="cl">Written out a quote or statement by hand and scanned it</span></div>
+      <div class="ci"><div class="chk" onclick="tog(this)"></div><span class="cl">Collected 2–3 images of the artist or person I am researching</span></div>
+      <div class="ci"><div class="chk" onclick="tog(this)"></div><span class="cl">All files saved to USB, Google Drive, or OneDrive — not just on my phone</span></div>
+      <div class="ci"><div class="chk" onclick="tog(this)"></div><span class="cl">Files named clearly so I can find them quickly</span></div>
+    </div>
+
+    <footer>© 2025 Photoshop Rotation · Thursday · IELS Level 5 · Inclusive Micro-Learning Series</footer>
+
+  </div>
+</div>
+
+<script>
+function tog(el) { el.classList.toggle('checked'); }
+</script>
+</body>
+</html>
